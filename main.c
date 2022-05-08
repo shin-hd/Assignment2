@@ -83,10 +83,8 @@ void blockcmp(){
 
 //두 개의 파일 수정 날짜를 비교하는 함수 작성
 void datecmp(){
-    filetime1();
     int mon1 = time1->tm_mon, day1 = time1->tm_mday;
-    filetime2();
-    int mon2 = time2->tm_hour, day2 = time2->tm_mday;
+    int mon2 = time2->tm_mon, day2 = time2->tm_mday;
     printf("date compare\n");
     if (mon1 == mon2) {
         if (day1 == day2) {
